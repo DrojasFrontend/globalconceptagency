@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Chillax";
+  src:
+    url("/fonts/Chillax-Extralight.woff2") format("woff2"),
+    url("/fonts/Chillax-Extralight.woff") format("woff"),
+    url("/fonts/Chillax-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chillax";
+  src:
+    url("/fonts/Chillax-Light.woff2") format("woff2"),
+    url("/fonts/Chillax-Light.woff") format("woff"),
+    url("/fonts/Chillax-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chillax";
+  src:
+    url("/fonts/Chillax-Regular.woff2") format("woff2"),
+    url("/fonts/Chillax-Regular.woff") format("woff"),
+    url("/fonts/Chillax-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chillax";
+  src:
+    url("/fonts/Chillax-Medium.woff2") format("woff2"),
+    url("/fonts/Chillax-Medium.woff") format("woff"),
+    url("/fonts/Chillax-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chillax";
+  src:
+    url("/fonts/Chillax-Semibold.woff2") format("woff2"),
+    url("/fonts/Chillax-Semibold.woff") format("woff"),
+    url("/fonts/Chillax-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chillax";
+  src:
+    url("/fonts/Chillax-Bold.woff2") format("woff2"),
+    url("/fonts/Chillax-Bold.woff") format("woff"),
+    url("/fonts/Chillax-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chillax";
+  src:
+    url("/fonts/Chillax-Variable.woff2") format("woff2"),
+    url("/fonts/Chillax-Variable.woff") format("woff"),
+    url("/fonts/Chillax-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  --bs-base-font-family: "Chillax";
+  --bs-font-family-secondary: var(--font-figtree), "Figtree", sans-serif;
+  --bs-black-100: rgb(12, 12, 15);
+  --bs-black-200: rgb(255 255 255 / 5%);
+  --bs-green: #a7dd3c;
+  --bs-white: #ffffff;
+  --bs-white-100: #ffffff3d;
+  --bs-gray: #e8e8e8;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: var(--bs-font-family-secondary);
+  background-color: var(--bs-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.text-black {
+  color: var(--bs-black) !important;
+}
+.text-black-100 {
+  color: var(--bs-black-100) !important;
+}
+.text-green {
+  color: var(--bs-green) !important;
+}
+.text-gray {
+  color: var(--bs-gray) !important;
+}
+.bg-black {
+  background-color: var(--bs-black) !important;
+}
+.bg-black-100 {
+  background-color: var(--bs-black-100) !important;
+}
+.bg-green {
+  background-color: var(--bs-green) !important;
+}
+.bg-gray {
+  background-color: var(--bs-gray) !important;
+}
+.border-black-200 {
+  border-color: var(--bs-black-200) !important;
+}
+.border-white-100 {
+  border-color: var(--bs-white-100) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bs-base-font-family);
+  font-weight: 400 !important;
+  line-height: 100% !important;
+}
+p {
+  font-weight: 100 !important;
+  line-height: 120% !important;
+}
+@media (min-width: 992px) {
+  .position-lg-absolute {
+    position: absolute;
+  }
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0.45rem 0.4rem 0.45rem 1.5rem;
+  border-radius: 50px;
+}
+.btn-primary {
+  color: var(--bs-black);
+  background-color: var(--bs-green);
+}
+.btn-primary:hover {
+  color: var(--bs-black);
+  background-color: var(--bs-white);
+}
+.btn-secondary {
+  color: var(--bs-black);
+  background-color: var(--bs-white);
+}
+.btn-secondary:hover {
+  color: var(--bs-black);
+  background-color: var(--bs-green);
+}
+.btn-black {
+  color: var(--bs-white);
+  background-color: var(--bs-black);
+}
+.btn-black:hover {
+  border-color: var(--bs-black);
+}
+.swiper--projects .swiper-slide {
+  height: auto;
+}
+.swiper--projects .swiper-pagination {
+  position: relative;
+  margin-top: 1.5rem;
+}
+.swiper--projects .swiper-pagination-bullet {
+  background: var(--bs-white);
+  opacity: 0.35;
+  transition: all 0.1s ease;
+}
+.swiper--projects .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 8px;
+  border-radius: 20px;
+  background: var(--bs-green);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+/* Font utilities */
+.font-chillax {
+  font-family: var(--bs-base-font-family);
+}
+.font-figtree {
+  font-family: var(--bs-font-family-secondary);
+}
+.fill-green {
+  fill: var(--bs-green);
+}
