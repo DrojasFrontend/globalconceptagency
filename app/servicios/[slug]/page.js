@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Header from '@/components/Header';
 import ContactBanner from '@/components/ContactBanner';
 
 const services = {
@@ -118,8 +119,10 @@ export default async function ServicioPage({ params }) {
 
   return (
     <main>
+      <Header />
       {/* Hero */}
-      <section>
+      <section className="">
+        <div className="py-5"></div>
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">

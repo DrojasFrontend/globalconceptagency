@@ -1,5 +1,5 @@
+import Header from '@/components/Header';
 import ContactBanner from '@/components/ContactBanner';
-
 export const metadata = {
   title: 'Contacto - Global Concept Agency | Agencia Digital Colombia',
   description:
@@ -9,8 +9,10 @@ export const metadata = {
 export default function ContactoPage() {
   return (
     <main>
+      <Header />
       {/* Hero con formulario */}
       <section>
+        <div className="py-5"></div>
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 position-relative">

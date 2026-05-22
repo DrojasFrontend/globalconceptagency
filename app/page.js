@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Header from '@/components/Header';
 import ContactBanner from '@/components/ContactBanner';
 import ProjectsSwiper from '@/components/ProjectsSwiper';
 import CurvedLoop from '@/components/CurvedLoop';
@@ -60,6 +61,7 @@ const posts = [
 export default function HomePage() {
   return (
     <main>
+      <Header />
       {/* Hero */}
       <section
         className="position-relative vh-100 overflow-hidden"
@@ -74,7 +76,7 @@ export default function HomePage() {
               <div className="position-relative d-flex flex-column align-items-center justify-content-end w-100 h-100 text-center">
                 <div className="row">
                   <div className="col-12 col-lg-7 mx-auto">
-                    <h1 className="display-3 text-white fw-normal">
+                    <h1 className="display-4 text-white fw-semibold">
                       Impulsa tu negocio con soluciones digitales estratégicas
                     </h1>
                     <p className="text-white fs-5 mb-4">
@@ -102,7 +104,7 @@ export default function HomePage() {
                         </span>
                       </a>
                     </div>
-                    <div className="py-4 py-lg-4"></div>
+                    
                   </div>
                 </div>
               </div>
@@ -110,9 +112,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Servicios */}
       <section className="px-lg-5" id="servicios">
+        <div className="py-lg-5 py-4"></div>
+
         <div className="container-fluid">
           <div className="row mb-5">
             <div className="col-12 col-lg-5">
@@ -144,7 +147,7 @@ export default function HomePage() {
                       <i className="bi bi-rocket-takeoff text-black fs-3"></i>
                     </span>
                     <h3 className="text-white fw-semibold">GoHighLevel CRM</h3>
-                    <p className="fs-3 text-white fw-light mb-0">
+                    <p className="fs-5 text-white fw-light mb-0">
                       Automatiza tu gestión de ventas y clientes. Integra toda tu operación en una
                       plataforma potente: CRM, marketing automation, facturación y más.
                       Implementamos GoHighLevel para que tu equipo cierre más ventas en menos tiempo.
@@ -168,7 +171,7 @@ export default function HomePage() {
                         <i className="bi bi-code-slash text-black fs-3"></i>
                       </span>
                       <h3 className="text-white fw-semibold">Desarrollo WordPress</h3>
-                      <p className="text-white fw-light mb-0 fs-5">
+                      <p className="text-white fw-light mb-0">
                         Sitios web profesionales y escalables. WordPress es la plataforma ideal para
                         empresas que necesitan control total. Creamos soluciones personalizadas,
                         optimizadas para SEO y velocidad, que se adaptan a tu negocio.
@@ -189,7 +192,7 @@ export default function HomePage() {
                         <i className="bi bi-clipboard-data text-black fs-3"></i>
                       </span>
                       <h3 className="text-white fw-semibold">Marketing Digital</h3>
-                      <p className="text-white fw-light mb-0 fs-5">
+                      <p className="text-white fw-light mb-0">
                         Estrategias que generan resultados. SEO, publicidad digital, content
                         marketing y email marketing. Posicionamos tu marca en línea y atraemos
                         clientes calificados que convierten en ventas.
@@ -202,11 +205,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <div className="py-lg-5 py-4"></div>
-
       {/* Proyectos */}
-      <section>
+      <section id="proyectos">
         <div className="container">
           <div className="row mb-5">
             <div className="col-12 col-lg-7 mx-auto text-center">
@@ -226,9 +227,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <div className="py-lg-5 py-4"></div>
-
       {/* Blog */}
       <section className="px-lg-5">
         <div className="container-fluid">
@@ -283,18 +282,15 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <div className="py-lg-5 py-4"></div>
-
-       {/* CurvedLoop marquee */}
-       <CurvedLoop
+      {/* CurvedLoop marquee */}
+      <CurvedLoop
         marqueeText="GoHighLevel ✦ WordPress ✦ Marketing Digital ✦ Global Concept Agency ✦"
         speed={2}
         curveAmount={0}
         direction="left"
         interactive={true}
         className="font-chillax fill-green fw-normal"
-
       />
 
       <ContactBanner
